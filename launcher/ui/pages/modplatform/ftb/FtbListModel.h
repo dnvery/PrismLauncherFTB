@@ -77,7 +77,7 @@ private:
     NetJob::Ptr jobPtr;
     int currentPack;
     QList<int> remainingPacks;
-    std::shared_ptr<QByteArray> response;
+    std::shared_ptr<QByteArray> response = std::make_shared<QByteArray>();
 };
 
 }
